@@ -1,0 +1,42 @@
+:root {
+    --height: 25%;
+    --width: 40%;
+}
+.text {
+    font-size: 3.5em;
+    font-weight: bold;
+    position: absolute;
+    top: calc(var(--height) + 16%);
+    left: calc(var(--width) + 6%);
+    z-index: 1;
+    text-shadow: 4px 4px 5px blue;
+}
+.box {
+    width: 150px;
+    height: 150px;
+    z-index: 2;
+}
+.box1 {
+    position: absolute;
+    top: var(--height);
+    left: var(--width);
+    background-color: red;
+}
+.box2 {
+    position: absolute;
+    top: var(--height);
+    left: calc(var(--width) + 150px);
+    background-color: yellow;
+}
+.box3 {
+    position: absolute;
+    top: calc(var(--height) + 150px);
+    left: var(--width);
+    background-color: blue;
+}
+.box4 {
+    position: absolute;
+    top: calc(var(--height) + 150px);
+    left: calc(var(--width) + 150px);
+    background-color: green;
+}
