@@ -14,7 +14,7 @@ function memoize(fn) {
 }
 
 function multiply(...args) {
-    var multi = 1;
+    let multi = 1;
    for(var i=0;i<args.length;i++) {
     multi = multi * args[i];
    }
